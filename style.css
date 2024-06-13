@@ -1,0 +1,222 @@
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    background: url('img/gym_girl.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left img {
+    width: 50px;
+    filter: invert(100%);
+    margin-right: 10px;
+}
+
+.mid {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+    color: gray;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    font-family: 'Averia Serif Libre', cursive;
+    margin: 0 9px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-color: rgb(53, 50, 50);
+}
+
+.contaniaer {
+    border: 3px solid gray;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    margin: 50px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: left;
+}
+
+.contaniaer h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 13px;
+    color: rgb(0, 0, 0);
+    border: 2px solid burlywood;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+.contaniaer button {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.content {
+    margin: 50px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid gray;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card p {
+    margin-bottom: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mid {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar li {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .right {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contaniaer {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+    }
+
+    .contaniaer button {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left img {
+        width: 40px;
+    }
+
+    .left div {
+        font-size: 14px;
+    }
+
+    .navbar li a {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    .contaniaer {
+        margin: 20px;
+    }
+
+    .contaniaer h1 {
+        font-size: 24px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 15px;
+    }
+
+    .contaniaer button {
+        font-size: 15px;
+    }
+}
+
+
+/* Existing styles */
+.navbar.hidden {
+    top: -80px; /* Move the navbar out of view */
+}
